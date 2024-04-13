@@ -6,6 +6,7 @@
         * [编译器前端](base/Compiler-Front.md)
         * [编译器中端](base/Compiler-Mid.md)
     * [程序分析](base/Program-Analysis.md)
+    * [可视化图类型](base/Graph.md)
 * [实践篇](practice/Practice.md)
     * [手搓工具](practice/Tools.md)
         * [生成CallGraph](TBD)
