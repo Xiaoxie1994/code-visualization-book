@@ -10,11 +10,11 @@
 
 ### 场景1：代码逻辑理解困难
 项目代码量很大且需求迭代快，每次梳理的文档很快就过时了。新同学入手困难苦不堪言，老手也很难对项目整体的业务逻辑有一个全面的认知，常常需要重新梳理逻辑。
-![代码逻辑理解困难](imgs/readme-picture-1.png)
+<img src="imgs/readme-picture-1.png" width="1000" height="400" alt="代码逻辑理解困难">
 
 ### 场景2：代码改动影响面难以评估
 需求的诉求是修改A页面的逻辑，但由于后端代码很多公用逻辑且调用层级很深，上线才后发现影响了B页面的逻辑，造成了线上事故。
-![影响面难以评估](imgs/readme-picture-2.png)
+<img src="imgs/readme-picture-2.png" width="1000" height="400" alt="影响面难以评估">
 
 ### 场景3：遗留项目重构缺少抓手
 老旧遗留项目经过长时间迭代和多次更换团队，导致内部代码逻辑十分混乱且没人能完全讲明白所有逻辑。但新的业务迭代需求源源不断，在原有项目上修改成本越来越高，亟需重构以获得更高地研发效率。  
@@ -44,7 +44,7 @@
 （更新中......）
 * [前言](README.md)
 * [原理篇](base/Principle.md)
-    * [编译原理](base/Compiler.md)
+    * [编译器](base/Compiler.md)
         * [编译器前端](base/Compiler-Front.md)
         * [编译器中端](base/Compiler-Mid.md)
     * [程序分析](base/Program-Analysis.md)

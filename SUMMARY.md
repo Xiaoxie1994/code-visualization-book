@@ -1,13 +1,13 @@
 # 目录
 
 * [前言](README.md)
-* [原理篇](base/Principle.md)
-    * [编译原理](base/Compiler.md)
+* 原理篇
+    * [编译器](base/Compiler.md)
         * [编译器前端](base/Compiler-Front.md)
         * [编译器中端](base/Compiler-Mid.md)
     * [程序分析](base/Program-Analysis.md)
     * [可视化图类型](base/Graph.md)
-* [实践篇](practice/Practice.md)
+* 实践篇
     * [手搓工具](practice/Tools.md)
         * [生成CallGraph](TBD)
         * [代码影响变更分析](TBD)
