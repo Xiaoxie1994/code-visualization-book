@@ -9,13 +9,15 @@
     * [可视化图类型](base/Graph.md)
 * 实践篇
     * [手搓工具](practice/Tools.md)
-        * [生成CallGraph](TBD)
+        * [CallGraph生成](TBD)
         * [代码影响变更分析](TBD)
-    * [业界实践](TBD)
-        * [代码阅读工具](TBD)
+    * [业界实践](case/Case-Intro.md)
+        <!-- * [代码阅读工具](TBD)
         * [ArchGuard](TBD)
         * [代码理解技术](TBD)
         * [精准测试](TBD)
         * [风险识别](TBD)
-        * [代码缺陷识别](TBD)
+        * [代码缺陷识别](TBD) -->
+        * 代码理解与分析
+            * [代码阅读辅助工具](case/Code-Read-Tools.md)
 * [结语](TBD)
