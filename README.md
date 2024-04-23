@@ -1,11 +1,14 @@
 # Code Visualization
-## [What]什么是代码可视化？
+书籍GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-visualization-book)，欢迎贡献想法、提建议😄。
+
+---
+## 【What】什么是代码可视化？
 > Code visualization is the process of creating graphical representations of source code to help understand and analyze it.  
 代码可视化是创建源代码的图形表示以帮助理解和分析它的过程。
 
 **个人理解**：通过使用图形化手段（架构图、依赖图、分布式追踪、类图、火焰图、CallGraph等）使代码在某些特征上变得可观测，用于辅助开发人员理解分析项目或建设一些自动化工具。
 
-## [Why]为什么需要代码可视化?
+## 【Why】为什么需要代码可视化?
 下面通过几个场景来说明开发、测试同学为什么需要代码可视化功能：
 
 ### 场景1：代码逻辑理解困难
@@ -25,7 +28,7 @@
 
 **其他场景**：代码改动影响面评估不准导致自动化case编写困难，回归也常常覆盖不到关联逻辑；线上问题排查困难，难以快速定位到出错代码......
 
-## [How]怎么实现代码可视化?
+## 【How】怎么实现代码可视化?
 大体可以分两步走：
 - 第一步**程序分析**：获取到源码、各种中间表示方式或其他方式采集的数据形成可视化的数据基础；
 - 第二步**数据可视化**：根据想要观测的视角选择对应的图表类型，将第一步获取的数据进行可视化展示。  
