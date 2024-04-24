@@ -1,5 +1,6 @@
 # Code Visualization
-书籍GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-visualization-book)，欢迎贡献想法、提建议😄。
+最新版本书籍地址：[code-visualization](https://xiexiao064.gitbook.io/code-visualization)    
+GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-visualization-book)，欢迎贡献想法、提建议😄。
 
 ---
 ## 【What】什么是代码可视化？
