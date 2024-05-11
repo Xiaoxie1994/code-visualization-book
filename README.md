@@ -47,24 +47,6 @@ GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-vis
 - 仅仅是想多学一点，或掌握一门装*技术  
 ......
 
-### 本书内容概览
-（更新中......）
-* [前言](README.md)
-* 原理篇
-    * [编译器](base/Compiler.md)
-        * [编译器前端](base/Compiler-Front.md)
-        * [编译器中端](base/Compiler-Mid.md)
-    * [程序分析](base/Program-Analysis.md)
-    * [可视化图类型](base/Graph.md)
-* 实践篇
-    * [手搓工具](practice/Tools.md)
-        * [CallGraph生成](TBD)
-        * [代码影响变更分析](TBD)
-    * [业界实践](case/Case-Intro.md)
-        * 代码理解与分析
-            * [代码阅读辅助工具](case/Code-Read-Tools.md)
-* [结语](TBD)
-
 ### 交流联系
 - Email: [xiexiao064@gmail.com](mailto:xiexiao064@gmail.com)
 - WeChat: ShawnLFF
