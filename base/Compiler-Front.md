@@ -1,8 +1,8 @@
 # 编译器前端
 编译器前端主要包含：词法分析、语法分析和语义分析。
 
-## 1.词法分析（Lexical Analysis，or Scanning）
-### 1.1.理论知识
+## 1. 词法分析（Lexical Analysis，or Scanning）
+### 1.1 理论知识
 词法分析又称扫描(scanning)，通过读入组成源程序的字符流，将它们组织成为有意义的词素(lexeme)的序列。词素是源程序中的最小语言单位，如关键字、标识符、常数、操作符和分隔符等。对于每个词素，词法分析器将产生对应的词法单元(token)作为输出。
 
 **token:<种别码，属性值>**
@@ -17,7 +17,7 @@
 
 ![图2.词法分析器过程](../imgs/compiler-front-2.png)
 
-### 1.2.实践一下
+### 1.2 实践一下
 接下来我们练练手，使用Antlr对Java源码进行词法分析。[Antlr](https://www.antlr.org/)是一个开源工具，支持根据规则文件生成词法分析器和语法分析器，它自身是用 Java 实现的，Mac上可以使用Homebrew安装或者直接使用idea插件[antlr-v4](https://plugins.jetbrains.com/plugin/7358-antlr-v4)。同时[grammars-v4](https://github.com/antlr/grammars-v4)上提供了很多供参考的规则，我们这里也直接使用其中针对Java8定义的词法分析规则练手。
 - 词法规则定义：[Java8Lexer.g4](https://github.com/antlr/grammars-v4/blob/master/java/java8/Java8Lexer.g4)
 ```
@@ -58,8 +58,8 @@ grun Java8Lexer tokens -tokens ./examples/helloworld.java
 
 ![图3.词法分析实验结果](../imgs/compiler-front-3.png)
 
-## 2.语法分析（Syntactic Analysis, or Parsing）
-### 2.1.理论知识
+## 2. 语法分析（Syntactic Analysis, or Parsing）
+### 2.1 理论知识
 语法分析又称解析（parsing），它在词法分析后执行。将tokens组织成语法结构，通常是一棵抽象语法树（Abstract Syntax Tree, AST），这棵树表示了源代码的语法结构。语法分析器需要根据一组预定义的语法规则来分析词法单元序列。这些规则通常以上[下文无关文法](https://zh.wikipedia.org/wiki/%E4%B8%8A%E4%B8%8B%E6%96%87%E6%97%A0%E5%85%B3%E6%96%87%E6%B3%95)（Context-Free Grammar, CFG）的形式定义，其中每个规则定义了语言中的一个结构如何由其他结构组成。
 
 ![图4.语法分析器](../imgs/compiler-front-4.png)
@@ -86,7 +86,7 @@ S → ε
 - ① **自顶向下语法分析**：从树的顶部（即开始符号）开始构建解析树的过程。在这种方法中，解析器尝试找出输入字符串可以从哪个产生式开始，并逐步展开这些产生式，直到获得完整的输入字符串。自顶向下解析的特点是直观、易于实现，尤其是对于简单的文法。然而，它们可能无法处理[左递归](https://zh.wikipedia.org/wiki/%E5%B7%A6%E9%81%9E%E6%AD%B8)文法，且对于复杂的文法可能不够高效。常见的算法有“[递归下降解析](https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92%E4%B8%8B%E9%99%8D%E8%A7%A3%E6%9E%90%E5%99%A8)”和“[LL解析](https://zh.wikipedia.org/zh-cn/LL%E5%89%96%E6%9E%90%E5%99%A8)”，算法的详细过程这里就不分析了，大家可以查查资料或者问一下GPT。
 - ② **自底向上语法分析**：从树的底部（即输入字符串）开始构建解析树的过程。在这种方法中，解析器尝试找出输入字符串的哪些部分可以对应文法的某个产生式的右侧，并将其规约为产生式的左侧，逐步减少整体的长度，直到最终规约为开始符号。自底向上解析通常比自顶向下解析更强大，因为它们可以处理更复杂的文法，包括那些自顶向下解析器无法处理的文法。然而，它们的解析表通常更为复杂，且实现起来可能更为困难。常见的算法有“[LR解析](https://zh.wikipedia.org/wiki/LR%E5%89%96%E6%9E%90%E5%99%A8)”。
 
-### 2.2.实践一下
+### 2.2 实践一下
 了解了基本概念后我们还是练练手，使用Antlr对Java源码进行语法分析。这次就不使用grammars-v4中定义的语法规则了，因为编程语言的语法规则比较复杂最后生成的AST可读性比较差。
 - 语法规则定义
 词法规则定义：[CommonLexer.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/CommonLexer.g4)；语法规则定义：[PlayScript.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/PlayScript.g4)。
@@ -145,8 +145,8 @@ age + 10 * 2 + 10
 
 ![图5.语法分析实验结果](../imgs/compiler-front-5.png)
 
-## 3.语义分析（Semantic Analyzer）
-### 3.1.理论知识
+## 3. 语义分析（Semantic Analyzer）
+### 3.1 理论知识
 语义分析器(semantic analyzer)使用语法树和符号表中的信息来检查源程序是否和语言定义的语义一致。它同时也收集类型信息，并把这些信息存放在语法树或符号表中，以便在随后的中间代码生成过程中使用。语义规则一般包括但不限于：
 - **类型检查**：确保操作数的类型与操作符兼容，例如不允许将整数赋值给字符串类型的变量；
 - **变量绑定**：确保变量和函数的声明与使用匹配，变量在使用前已被声明，函数调用时参数的数量和类型与声明相符；
@@ -155,7 +155,7 @@ age + 10 * 2 + 10
 - **权限和可访问性检查**：确保对变量和函数的访问符合其声明的权限，例如私有成员只能在其类内部被访问。
 
 由于每种语言都有其独特的语义规则和特性，例如类型系统、作用域规则、合法的操作符重载等都是语言特定的。因此，语义分析必须针对每种语言的规范来设计。
-### 3.2.实践一下
+### 3.2 实践一下
 由于不同语言的语义分析实现差异较大，没有通用的语义分析器生成工具。因此我们直接来阅读一下Java编译器中的相关源码，了解一下实现逻辑。javac中语义分析的源码位于com.sun.tools.javac.code和com.sun.tools.javac.comp包中。
 
 ![图6.javac](../imgs/compiler-front-6.png)
