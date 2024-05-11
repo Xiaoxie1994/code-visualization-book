@@ -57,7 +57,7 @@ a=(-b+c*d)+c*d
 | 数组赋值 | x[i]=y | |
 | 地址及指针操作 | x=&y、x=*y*x=y | |
 
-表达式A对应的TAC为（可以通过遍历AST生成TAC）：
+表达式A对应的TAC为（可以通过遍历AST生成TAC）：    
 ![TAC&AST](../imgs/compiler-mid/image-6.png)
 
 **④ 静态单赋值形式（Static Single Assignment, SSA）**
@@ -106,7 +106,7 @@ clang -emit-llvm -c fun1.c -o fun1.bc
 ![fun1.ll](../imgs/compiler-mid/image-9.png)
 
 **④ IR转换**    
-两种中间代码可以互相转换，我们将前面生成的.ll转换为.bc。
+两种中间代码可以互相转换，我们将前面生成的.ll转换为.bc。    
 ![转换方法](../imgs/compiler-mid/image-10.png)
 ```Bash
 # 转换命令
