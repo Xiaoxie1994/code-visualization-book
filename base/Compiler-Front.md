@@ -89,7 +89,7 @@ S → ε
 ### 2.2 实践一下
 了解了基本概念后我们还是练练手，使用Antlr对Java源码进行语法分析。这次就不使用grammars-v4中定义的语法规则了，因为编程语言的语法规则比较复杂最后生成的AST可读性比较差。
 - 语法规则定义
-词法规则定义：[CommonLexer.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/CommonLexer.g4)；语法规则定义：[PlayScript.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/PlayScript.g4)。
+(词法规则定义：[CommonLexer.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/CommonLexer.g4)，语法规则定义：[PlayScript.g4](https://github.com/RichardGong/PlayWithCompiler/blob/master/lab/antlrtest/src/antlrtest/PlayScript.g4))
 ```
 grammar PlayScript;
 import CommonLexer;   //导入词法定义

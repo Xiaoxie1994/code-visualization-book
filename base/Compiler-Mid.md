@@ -171,7 +171,7 @@ void example() {
 }
 ```
 
-**③ 公共子表达式消除（Common Subexpression Elimination, CSE） **    
+**③ 公共子表达式消除（Common Subexpression Elimination, CSE）**    
 识别并消除在程序中多次计算的相同表达式，从而减少重复计算，提高程序的运行效率。这种技术识别在一段代码中多次出现的相同表达式，然后将这个表达式的计算结果保存在一个临时变量中，后续使用这个结果而不是重新计算表达式。举例：
 ```C
 int a = b * c + g;
