@@ -6,18 +6,25 @@
         * [编译器前端](base/Compiler-Front.md)
         * [编译器中端](base/Compiler-Mid.md)
     * [程序分析](base/Program-Analysis.md)
+        * 静态分析
+        * 动态分析
     * [可视化图类型](base/Graph.md)
 * 实践篇
     * [手搓工具](practice/Tools.md)
-        * [CallGraph生成](TBD)
-        * [代码影响变更分析](TBD)
+        * [常见图表生成](TBD)
+        * [代码变更影响分析](TBD)
     * [业界实践](case/Case-Intro.md)
-        <!-- * [代码阅读工具](TBD)
-        * [ArchGuard](TBD)
-        * [代码理解技术](TBD)
-        * [精准测试](TBD)
-        * [风险识别](TBD)
-        * [代码缺陷识别](TBD) -->
         * 代码理解与分析
             * [代码阅读辅助工具](case/Code-Read-Tools.md)
+            * [正则表达式可视化工具](case/Regex-Read-Tools.md)
+        * 代码质量检测
+            * 缺陷识别&治理
+        * 性能分析
+        * 精准测试
+            * 变更风险识别
+        * 自动化重构
+            * 冗余代码治理
+        * 架构治理
+            * 架构度量
+            * 架构守护
 * [结语](TBD)
