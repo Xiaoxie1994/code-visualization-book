@@ -11,20 +11,18 @@
     * [可视化图类型](base/Graph.md)
 * 实践篇
     * [手搓工具](practice/Tools.md)
-        * [常见图表生成](TBD)
-        * [代码变更影响分析](TBD)
+        * 常见图表生成
+        * 代码变更影响分析
     * [业界实践](case/Case-Intro.md)
-        * 代码理解与分析
+        * [代码理解与分析](case/Understand-Code.md)
             * [代码阅读辅助工具](case/Code-Read-Tools.md)
             * [正则表达式可视化工具](case/Regex-Read-Tools.md)
-        * 代码质量检测
-            * 缺陷识别&治理
-        * 性能分析
-        * 精准测试
-            * 变更风险识别
-        * 自动化重构
+        * [代码质量检测](case/Code-Quality.md)
+        * [代码性能分析](case/Code-Performance-Analysis.md)
+        * [精准测试](case/Precision-Testing.md)
+        * [代码自动重构](case/Automated-Refactoring.md)
             * 冗余代码治理
-        * 架构治理
+        * [架构治理](case/Architecture-Governance.md)
             * 架构度量
             * 架构守护
-* [结语](TBD)
+* 结语
