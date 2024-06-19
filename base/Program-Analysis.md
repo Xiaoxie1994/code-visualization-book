@@ -16,7 +16,9 @@ CFG/DFG/Abstract interpretation/Type systems/Effect systems/Model checking
 
 教程：    
 - https://xiongyingfei.github.io/SA_new/2023/
+- https://www.educoder.net/classrooms/7759/announcement
+- https://tai-e.pascal-lab.net/lectures.html
 - https://pages.cs.wisc.edu/~reps/
+- http://staff.ustc.edu.cn/~yuzhang/pldpa/
 - https://static-analysis.cuijiacai.com/preface/
 - https://ranger-nju.gitbook.io/static-program-analysis-book/
-- http://staff.ustc.edu.cn/~yuzhang/pldpa/notes/0CourseInfo.pdf

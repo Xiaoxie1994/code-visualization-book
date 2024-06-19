@@ -1,5 +1,5 @@
 # Code Visualization
-最新版本书籍地址：[code-visualization](https://xiexiao064.gitbook.io/code-visualization)    
+最新版阅读地址：[code-visualization](https://xiexiao064.gitbook.io/code-visualization)    
 GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-visualization-book)，欢迎贡献想法、提建议😄。
 
 ---
@@ -30,11 +30,11 @@ GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-vis
 **其他场景**：代码改动影响面评估不准导致自动化case编写困难，回归也常常覆盖不到关联逻辑；线上问题排查困难，难以快速定位到出错代码......
 
 ## 【How】怎么实现代码可视化?
-大体可以分两步走：
-- 第一步**程序分析**：获取到源码、各种中间表示方式或其他方式采集的数据形成可视化的数据基础；
-- 第二步**数据可视化**：根据想要观测的视角选择对应的图表类型，将第一步获取的数据进行可视化展示。  
+大体可以分三步走：
+- 第一步**程序分析**：获取到源码、中间表示方式或其他方式采集的数据形成数据基础（根据诉求可能会存在多次数据加工；储存的方式也有多种选择，如：图数据库）；
+- 第二步**数据可视化**：根据想要观测的视角选择对应的图表类型，将数据进行可视化展示。  
 
-当然对于实际应用场景完成可视化也只是刚刚开始，之后会再基于可观测的部分结合自己的诉求建设更复杂的工具。本书将会从理论和实践两部分进行阐述，先了解实现代码可视化需要掌握的基础理论，例如：AST生成、CFG和DFG等；接着实践部分我们会实现“**CallGraph可视化**”并提供基于Git的代码影响变更分析功能；最后会罗列一些业界已知的实践方案供大家扩展学习。  
+对于实际应用场景完成可视化也只是刚刚开始，之后会再基于可观测的部分结合自己的诉求建设更复杂的工具。本书将会从理论和实践两部分进行阐述，先了解实现代码可视化需要掌握的基础理论，例如：AST生成、CFG和DFG等；接着实践部分我们会实现“**CallGraph可视化**”并提供“**基于Git的代码影响变更分析**”功能；最后会列举一些业界已知的实践方案供大家扩展学习。  
 信息结构参考下面的思维导图（图内容还在迭代中，原图获取[点这里](base/code-visualization-map.xmind)）:
 ![图4.代码可视化导图](imgs/readme-picture-4.png)
 
@@ -50,3 +50,6 @@ GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-vis
 ### 交流联系
 - Email: [xiexiao064@gmail.com](mailto:xiexiao064@gmail.com)
 - WeChat: ShawnLFF
+- 公众号: 肖恩杂谈
+
+<img src="./imgs/image-1.png" alt="公众号二维码" width="400">
