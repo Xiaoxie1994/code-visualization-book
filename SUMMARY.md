@@ -6,13 +6,13 @@
         * [编译器前端](base/Compiler-Front.md)
         * [编译器中端](base/Compiler-Mid.md)
     * [程序分析](base/Program-Analysis.md)
-        * 静态分析
-        * 动态分析
+        * [静态分析](base/Static-Analysis.md)
+        * [动态分析](base/Dynamic-Analysis.md)
     * [可视化图类型](base/Graph.md)
 * 实践篇
-    * [手搓工具](practice/Tools.md)
-        * 常见图表生成
-        * 代码变更影响分析
+    * [实践练习](practice/Tools.md)
+        * [常见图表生成](practice/Graph-Case.md)
+        * [代码变更影响分析](practice/CG-Diff.md)
     * [业界实践](case/Case-Intro.md)
         * [代码理解与分析](case/Understand-Code.md)
             * [代码阅读辅助工具](case/Code-Read-Tools.md)
