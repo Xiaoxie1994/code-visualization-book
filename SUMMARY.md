@@ -11,7 +11,7 @@
     * [可视化图类型](base/Graph.md)
 * 实践篇
     * [实践练习](practice/Tools.md)
-        * [常见图表生成](practice/Graph-Case.md)
+        * [常见图表生成](practice/Graph-case.md)
         * [代码变更影响分析](practice/CG-Diff.md)
     * [业界实践](case/Case-Intro.md)
         * [代码理解与分析](case/Understand-Code.md)
