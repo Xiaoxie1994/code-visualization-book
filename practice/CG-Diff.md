@@ -9,10 +9,10 @@
 
 ![场景2](../imgs/cg-diff/image-1.png)
 
-“代码变更影响分析”具体的诉求可以描述为：如何感知代码改动造成功能逻辑变化的影响范围，具体到影响了哪些类、方法、入口以及调用拓扑。
+“代码变更影响分析”具体的诉求可以描述为：**如何感知代码改动造成功能逻辑变化的影响范围，具体到影响了哪些类、方法、入口以及调用拓扑**。
 
 ## 实现方案
-针对上述背景，本案例将使用源码静态分析的方式生成CallGraph，并提供代码变更影响分析能力。其基本的思路为：
+针对上述背景，本案例将使用源码静态分析的方式生成CallGraph，并提供代码变更影响分析能力。基本思路为：
 
 ![代码变更影响分析方案](../imgs/cg-diff/image-2.png)
 
@@ -171,7 +171,7 @@ private AstEntity.MethodDeclareInfo parseMethod(MethodDeclaration methodDeclarat
 ```
 - **CallGraph生成**：选择起始节点，基于方法和调用关系生成方法调用拓扑图。
 
-![CallGraph](../imgs/cg-diff/image-4.png)
+<img src="../imgs/cg-diff/image-4.png" alt="CallGraph" width="500">
 
 ### 代码变更影响分析
 通过Git Diff获取变更影响了哪些Java类文件，然后对变更前后的类文件进行源码解析得到类方法列表并对比前后差异得到变更影响的方法节点，最后结合之前生成的方法拓扑信息得到变更影响拓扑图。
