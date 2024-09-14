@@ -22,3 +22,5 @@ CFG/DFG/Abstract interpretation/Type systems/Effect systems/Model checking
 - http://staff.ustc.edu.cn/~yuzhang/pldpa/
 - https://static-analysis.cuijiacai.com/preface/
 - https://ranger-nju.gitbook.io/static-program-analysis-book/
+- https://xiongyingfei.github.io/SA/2022/main.htm
+- https://cs.au.dk/~amoeller/spa/

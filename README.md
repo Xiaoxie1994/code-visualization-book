@@ -50,6 +50,6 @@ GitHub地址：[code-visualization-book](https://github.com/Xiaoxie1994/code-vis
 ### 交流联系
 - Email: [xiexiao064@gmail.com](mailto:xiexiao064@gmail.com)
 - WeChat: ShawnLFF
-- 公众号: 肖恩杂谈
+- 公众号: 肖恩聊技术
 
 <img src="./imgs/image-1.png" alt="公众号二维码" width="400">
